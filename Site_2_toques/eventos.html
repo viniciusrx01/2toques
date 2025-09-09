@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página de Eventos -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <h2 class="section-title">EVENTOS</h2>
+            
+            <div class="eventos-intro">
+                <p>Participe dos eventos exclusivos do nosso clube! Aqui você encontra informações sobre todas as atividades, jogos, encontros de torcedores e eventos especiais que organizamos para nossa comunidade.</p>
+            </div>
+            
+            <div class="eventos-filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="jogos">Jogos</button>
+                <button class="filtro-btn" data-categoria="socios">Eventos de Sócios</button>
+                <button class="filtro-btn" data-categoria="torcedores">Encontros de Torcedores</button>
+                <button class="filtro-btn" data-categoria="especiais">Eventos Especiais</button>
+            </div>
+            
+            <div class="eventos-proximos">
+                <h3>Próximos Eventos</h3>
+                
+                <div class="eventos-lista">
+                    <div class="evento-item" data-categoria="jogos">
+                        <div class="evento-data">
+                            <span class="evento-dia">25</span>
+                            <span class="evento-mes">NOV</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Jogo: Nosso Clube x Adversário</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Estádio Principal</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 16:00h</p>
+                            <p class="evento-desc">Partida válida pelo Campeonato Brasileiro - Série A. Venha apoiar nosso time!</p>
+                            <div class="evento-acoes">
+                                <a href="#" class="btn btn-pequeno">Comprar Ingresso</a>
+                                <a href="#" class="btn-link">+ Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="evento-status">
+                            <span class="status-badge confirmado">Confirmado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="evento-item" data-categoria="socios">
+                        <div class="evento-data">
+                            <span class="evento-dia">28</span>
+                            <span class="evento-mes">NOV</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Encontro de Sócios Torcedores</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Sede Social do Clube</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 19:30h</p>
+                            <p class="evento-desc">Encontro exclusivo para sócios torcedores com jogadores e comissão técnica.</p>
+                            <div class="evento-acoes">
+                                <a href="#" class="btn btn-pequeno">Confirmar Presença</a>
+                                <a href="#" class="btn-link">+ Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="evento-status">
+                            <span class="status-badge confirmado">Confirmado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="evento-item" data-categoria="torcedores">
+                        <div class="evento-data">
+                            <span class="evento-dia">02</span>
+                            <span class="evento-mes">DEZ</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Concentração de Torcedores</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Parque da Torcida</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 14:00h</p>
+                            <p class="evento-desc">Concentração antes do jogo fora de casa. Ônibus disponível para o estádio.</p>
+                            <div class="evento-acoes">
+                                <a href="#" class="btn btn-pequeno">Reservar Vaga</a>
+                                <a href="#" class="btn-link">+ Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="evento-status">
+                            <span class="status-badge confirmado">Confirmado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="evento-item" data-categoria="especiais">
+                        <div class="evento-data">
+                            <span class="evento-dia">10</span>
+                            <span class="evento-mes">DEZ</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Jantar de Natal do Clube</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Salão de Eventos</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 20:00h</p>
+                            <p class="evento-desc">Jantar de confraternização de Natal com jogadores, diretores e convidados.</p>
+                            <div class="evento-acoes">
+                                <a href="#" class="btn btn-pequeno">Adquirir Convite</a>
+                                <a href="#" class="btn-link">+ Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="evento-status">
+                            <span class="status-badge confirmado">Confirmado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="evento-item" data-categoria="jogos">
+                        <div class="evento-data">
+                            <span class="evento-dia">15</span>
+                            <span class="evento-mes">DEZ</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Jogo: Nosso Clube x Rival</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Estádio Principal</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 18:00h</p>
+                            <p class="evento-desc">Clássico estadual. Expectativa de público recorde. Garanta seu ingresso!</p>
+                            <div class="evento-acoes">
+                                <a href="#" class="btn btn-pequeno">Comprar Ingresso</a>
+                                <a href="#" class="btn-link">+ Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="evento-status">
+                            <span class="status-badge confirmado">Confirmado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="eventos-passados">
+                <h3>Eventos Realizados</h3>
+                
+                <div class="eventos-lista">
+                    <div class="evento-item passado">
+                        <div class="evento-data">
+                            <span class="evento-dia">12</span>
+                            <span class="evento-mes">NOV</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Visita ao CT</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Centro de Treinamento</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 10:00h</p>
+                            <p class="evento-desc">Visita guiada ao centro de treinamento para sócios torcedores.</p>
+                            <div class="evento-acoes">
+                                <span class="evento-realizado">Evento Realizado</span>
+                                <a href="#" class="btn-link">Ver Fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="evento-item passado">
+                        <div class="evento-data">
+                            <span class="evento-dia">05</span>
+                            <span class="evento-mes">NOV</span>
+                        </div>
+                        <div class="evento-info">
+                            <h4>Lançamento Camisa 2024</h4>
+                            <p class="evento-local"><i class="fas fa-map-marker-alt"></i> Loja Oficial</p>
+                            <p class="evento-horario"><i class="fas fa-clock"></i> 15:00h</p>
+                            <p class="evento-desc">Evento de lançamento da nova camisa oficial para a temporada 2024.</p>
+                            <div class="evento-acoes">
+                                <span class="evento-realizado">Evento Realizado</span>
+                                <a href="#" class="btn-link">Ver Fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter-eventos">
+                <div class="newsletter-content">
+                    <h3>Não perca nenhum evento!</h3>
+                    <p>Cadastre-se para receber informações sobre todos os eventos do clube por e-mail.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                        <button type="submit" class="btn">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

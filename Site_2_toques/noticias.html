@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página de Notícias -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <h2 class="section-title">NOTÍCIAS</h2>
+            
+            <div class="filtros-categorias">
+                <button class="filtro-btn active" data-categoria="todos">Todas</button>
+                <button class="filtro-btn" data-categoria="campeonato">Campeonato</button>
+                <button class="filtro-btn" data-categoria="elenco"><a href="elenco.html">Elenco</button>
+                <button class="filtro-btn" data-categoria="socio">Sócio Torcedor</button>
+            </div>
+            
+            <div class="noticias-lista">
+                <article class="noticia-destaque">
+                    <div class="noticia-destaque-img">
+                        <img src="img/destaque/0054.png" alt="Notícia em Destaque">
+                    </div>
+                    <div class="noticia-destaque-content">
+                        <span class="noticia-categoria">Campeonato</span>
+                        <h3>Clube vence importante partida fora de casa</h3>
+                        <p class="noticia-data"><i class="far fa-calendar"></i> 20 de Novembro, 2023</p>
+                        <p>Em jogo disputado, nosso time conseguiu uma vitória importante contra um forte adversário, garantindo três pontos cruciais na disputa do campeonato. O gol da vitória foi marcado pelo atacante no segundo tempo, após grande jogada coletiva.</p>
+                        <a href="noticia-detalhe.html" class="btn">Ler Mais</a>
+                    </div>
+                </article>
+                
+                <div class="noticias-grid">
+                    <article class="noticia-card">
+                        <div class="noticia-img">
+                            <img src="https://via.placeholder.com/350x200/0000cc/ffffff?text=Notícia+1" alt="Notícia 1">
+                        </div>
+                        <div class="noticia-content">
+                            <span class="noticia-categoria">Elenco</span>
+                            <h3>Novo reforço é apresentado</h3>
+                            <p class="noticia-data"><i class="far fa-calendar"></i> 18 de Novembro, 2023</p>
+                            <p>O clube anunciou hoje a contratação do jogador que chega para fortalecer o elenco...</p>
+                            <a href="noticia-detalhe.html" class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="noticia-card">
+                        <div class="noticia-img">
+                            <img src="https://via.placeholder.com/350x200/ff0000/ffffff?text=Notícia+2" alt="Notícia 2">
+                        </div>
+                        <div class="noticia-content">
+                            <span class="noticia-categoria">Sócio Torcedor</span>
+                            <h3>Clube atinge marca histórica de sócios</h3>
+                            <p class="noticia-data"><i class="far fa-calendar"></i> 15 de Novembro, 2023</p>
+                            <p>Nossa campanha de sócios torcedores atingiu um número recorde este mês, ultrapassando a marca dos 15 mil associados...</p>
+                            <a href="noticia-detalhe.html" class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="noticia-card">
+                        <div class="noticia-img">
+                            <img src="https://via.placeholder.com/350x200/0000cc/ffffff?text=Notícia+3" alt="Notícia 3">
+                        </div>
+                        <div class="noticia-content">
+                            <span class="noticia-categoria">Campeonato</span>
+                            <h3>Preparação para o clássico</h3>
+                            <p class="noticia-data"><i class="far fa-calendar"></i> 12 de Novembro, 2023</p>
+                            <p>Time inicia preparação para o próximo clássico com treinos focados e estratégia definida...</p>
+                            <a href="noticia-detalhe.html" class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="noticia-card">
+                        <div class="noticia-img">
+                            <img src="https://via.placeholder.com/350x200/ff0000/ffffff?text=Notícia+4" alt="Notícia 4">
+                        </div>
+                        <div class="noticia-content">
+                            <span class="noticia-categoria">Elenco</span>
+                            <h3>Jogador é convocado para seleção</h3>
+                            <p class="noticia-data"><i class="far fa-calendar"></i> 10 de Novembro, 2023</p>
+                            <p>Nosso meia-atacante foi convocado para a seleção nacional para os próximos amistosos...</p>
+                            <a href="noticia-detalhe.html" class="leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="paginacao">
+                    <a href="#" class="pagina-btn active">1</a>
+                    <a href="#" class="pagina-btn">2</a>
+                    <a href="#" class="pagina-btn">3</a>
+                    <a href="#" class="pagina-btn">4</a>
+                    <a href="#" class="pagina-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

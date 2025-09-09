@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página de Mídias -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <h2 class="section-title">MÍDIAS</h2>
+            
+            <div class="midias-tabs">
+                <button class="tab-btn active" data-tab="fotos">Fotos</button>
+                <button class="tab-btn" data-tab="videos">Vídeos</button>
+                <button class="tab-btn" data-tab="podcasts">Podcasts</button>
+            </div>
+            
+            <div class="midias-tab-content">
+                <div class="tab-pane active" id="fotos">
+                    <div class="galeria-fotos">
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Jogo+1" alt="Jogo 1">
+                            <div class="foto-info">
+                                <h4>Vitória sobre o adversário</h4>
+                                <p>20 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Treino" alt="Treino">
+                            <div class="foto-info">
+                                <h4>Preparação para o clássico</h4>
+                                <p>18 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Torcida" alt="Torcida">
+                            <div class="foto-info">
+                                <h4>Torcida presente no estádio</h4>
+                                <p>15 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Coletiva" alt="Coletiva">
+                            <div class="foto-info">
+                                <h4>Coletiva pós-jogo</h4>
+                                <p>12 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Evento" alt="Evento">
+                            <div class="foto-info">
+                                <h4>Evento de sócios torcedores</h4>
+                                <p>10 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="foto-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Escolinha" alt="Escolinha">
+                            <div class="foto-info">
+                                <h4>Escolinha de futebol</h4>
+                                <p>8 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="paginacao">
+                        <a href="#" class="pagina-btn active">1</a>
+                        <a href="#" class="pagina-btn">2</a>
+                        <a href="#" class="pagina-btn">3</a>
+                        <a href="#" class="pagina-btn">4</a>
+                        <a href="#" class="pagina-btn"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="videos">
+                    <div class="galeria-videos">
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Resumo+Jogo" alt="Resumo de Jogo">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Resumo: Clube 3 x 1 Adversário</h4>
+                                <p>20 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Entrevista" alt="Entrevista">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Entrevista com o técnico</h4>
+                                <p>18 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Melhores+Momentos" alt="Melhores Momentos">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Melhores momentos do último jogo</h4>
+                                <p>15 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Treino" alt="Treino">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Treino aberto à imprensa</h4>
+                                <p>12 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/ff0000/ffffff?text=Entrevista+Jogador" alt="Entrevista Jogador">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Entrevista com o artilheiro</h4>
+                                <p>10 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <img src="https://via.placeholder.com/400x300/0000cc/ffffff?text=Documentário" alt="Documentário">
+                            <div class="play-btn"><i class="fas fa-play"></i></div>
+                            <div class="video-info">
+                                <h4>Documentário: História do Clube</h4>
+                                <p>8 de Novembro, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="paginacao">
+                        <a href="#" class="pagina-btn active">1</a>
+                        <a href="#" class="pagina-btn">2</a>
+                        <a href="#" class="pagina-btn">3</a>
+                        <a href="#" class="pagina-btn">4</a>
+                        <a href="#" class="pagina-btn"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="podcasts">
+                    <div class="podcasts-lista">
+                        <div class="podcast-item">
+                            <div class="podcast-img">
+                                <img src="https://via.placeholder.com/150x150/ff0000/ffffff?text=Podcast" alt="Podcast 1">
+                            </div>
+                            <div class="podcast-content">
+                                <h4>Análise pós-jogo: Clube 3 x 1 Adversário</h4>
+                                <p class="podcast-data"><i class="far fa-calendar"></i> 20 de Novembro, 2023</p>
+                                <p class="podcast-desc">Neste episódio, nossa equipe analisa a importante vitória do clube no último final de semana.</p>
+                                <div class="podcast-actions">
+                                    <a href="#" class="btn-play"><i class="fas fa-play"></i> Ouvir agora</a>
+                                    <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-item">
+                            <div class="podcast-img">
+                                <img src="https://via.placeholder.com/150x150/0000cc/ffffff?text=Podcast" alt="Podcast 2">
+                            </div>
+                            <div class="podcast-content">
+                                <h4>Entrevista exclusiva com o técnico</h4>
+                                <p class="podcast-data"><i class="far fa-calendar"></i> 18 de Novembro, 2023</p>
+                                <p class="podcast-desc">O técnico do clube concede entrevista exclusiva e fala sobre a preparação para o próximo jogo.</p>
+                                <div class="podcast-actions">
+                                    <a href="#" class="btn-play"><i class="fas fa-play"></i> Ouvir agora</a>
+                                    <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-item">
+                            <div class="podcast-img">
+                                <img src="https://via.placeholder.com/150x150/ff0000/ffffff?text=Podcast" alt="Podcast 3">
+                            </div>
+                            <div class="podcast-content">
+                                <h4>Especial: 10 anos do título estadual</h4>
+                                <p class="podcast-data"><i class="far fa-calendar"></i> 15 de Novembro, 2023</p>
+                                <p class="podcast-desc">Em um especial, relembramos os 10 anos do título estadual conquistado pelo clube.</p>
+                                <div class="podcast-actions">
+                                    <a href="#" class="btn-play"><i class="fas fa-play"></i> Ouvir agora</a>
+                                    <a href="#" class="btn-download"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="paginacao">
+                        <a href="#" class="pagina-btn active">1</a>
+                        <a href="#" class="pagina-btn">2</a>
+                        <a href="#" class="pagina-btn">3</a>
+                        <a href="#" class="pagina-btn">4</a>
+                        <a href="#" class="pagina-btn"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

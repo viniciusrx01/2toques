@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página da Loja -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <h2 class="section-title">LOJA OFICIAL</h2>
+            
+            <div class="filtros-categorias">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="uniformes">Uniformes</button>
+                <button class="filtro-btn" data-categoria="camisas">Camisas</button>
+                <button class="filtro-btn" data-categoria="acessorios">Acessórios</button>
+            </div>
+            
+            <div class="produtos-grid">
+                <!-- Produtos serão inseridos via JavaScript -->
+            </div>
+            
+            <div class="paginacao">
+                <a href="#" class="pagina-btn active">1</a>
+                <a href="#" class="pagina-btn">2</a>
+                <a href="#" class="pagina-btn">3</a>
+                <a href="#" class="pagina-btn">4</a>
+                <a href="#" class="pagina-btn"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras (modal) -->
+    <div class="carrinho-modal" id="carrinho">
+        <div class="carrinho-conteudo">
+            <div class="carrinho-header">
+                <h3>Seu Carrinho</h3>
+                <a href="#" class="fechar-carrinho">&times;</a>
+            </div>
+            <div class="carrinho-itens">
+                <!-- Itens do carrinho serão inseridos via JavaScript -->
+            </div>
+            <div class="carrinho-total">
+                <p>Total: <span class="total-valor">R$ 0,00</span></p>
+                <button class="btn finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

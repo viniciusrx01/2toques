@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#e60000">
+    <meta name="msapplication-TileColor" content="#e60000">
+    <title>2 TOQUES - Site Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao 2 TOQUES!</h2>
+            <p>Uma paixão que une seus torcedores</p>
+            <a href="socio.html" class="btn">Seja Sócio Torcedor</a>
+        </div>
+    </section>
+
+    <!-- Próximo Jogo -->
+    <section class="proximo-jogo">
+        <div class="container">
+            <h2 class="section-title">PRÓXIMO JOGO</h2>
+            <div class="jogo-content">
+                <div class="time time-casa">
+                    <img src="img/escudo.png" alt="Time da Casa">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="jogo-info">
+                    <div class="campeonato">Campeonato CREIBE - Série A</div>
+                    <div class="data-horario">Sábado, 25/11/2023 - 16:00h</div>
+                    <div class="estadio">Estádio Principal</div>
+                    <div class="vs">VS</div>
+                </div>
+                <div class="time time-visitante">
+                    <img src="img/clube_visitante/bayem.png" alt="Time Visitante">
+                    <span>Adversário</span>
+                </div>
+            </div>
+            <div class="mais-jogos">
+                <a href="#" id="ver-mais-jogos">MAIS JOGOS <i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendário de Jogos (inicialmente oculto) -->
+    <section class="calendario-jogos hidden">
+        <div class="container">
+            <h2 class="section-title">PRÓXIMOS JOGOS</h2>
+            <div class="tabela-jogos">
+                <!-- Os jogos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="destaques">
+        <div class="container">
+            <h2 class="section-title">DESTAQUES</h2>
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <div class="destaque-img">
+                        <img src="img/destaque/001.png" alt="Notícias">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>Últimas Notícias</h3>
+                        <p>Fique por dentro de todas as novidades do clube</p>
+                        <a href="noticias.html" class="btn">Ver Notícias</a>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-img">
+                        <img src="img/destaque/002.png" alt="Loja">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>Loja Oficial</h3>
+                        <p>Adquira já seus produtos oficiais do clube</p>
+                        <a href="loja.html" class="btn">Visitar Loja</a>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <div class="destaque-img">
+                        <img src="img/destaque/003.png" alt="Sócio Torcedor">
+                    </div>
+                    <div class="destaque-content">
+                        <h3>Sócio Torcedor</h3>
+                        <p>Faça parte do nosso time de associados</p>
+                        <a href="socio.html" class="btn">Associar-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

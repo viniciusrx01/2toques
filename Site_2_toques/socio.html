@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sócio Torcedor - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página de Sócio Torcedor -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <div class="socio-hero">
+                <div class="socio-hero-content">
+                    <h2>Faça parte do nosso time</h2>
+                    <p>Junte-se a milhares de torcedores que fazem a diferença no clube. Seja sócio torcedor e tenha benefícios exclusivos.</p>
+                    <div class="contador-socios">
+                        <h3>Já somos <span id="numero-socios">3.347</span> sócios torcedores!</h3>
+                        <div class="barra-progresso">
+                            <div class="progresso" style="width: 65%;"></div>
+                        </div>
+                        <p>Meta: 5.000 sócios</p>
+                    </div>
+                    <a href="#planos" class="btn">Associar-se Agora</a>
+                </div>
+                <div class="socio-hero-image">
+                    <img src="img/socio/carteirinha.png" alt="Sócio Torcedor">
+                </div>
+            </div>
+            
+            <div class="beneficios-socios">
+                <h2 class="section-title">Vantagens de ser sócio</h2>
+                
+                <div class="beneficios-grid">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h3>Ingressos com desconto</h3>
+                        <p>Garanta seu lugar com antecedência e pague menos em todos os jogos</p>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Descontos exclusivos</h3>
+                        <p>10% off em todos os produtos da loja oficial do clube</p>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Kit sócio torcedor</h3>
+                        <p>Receba um kit exclusivo com camisa, carteirinha e outros brindes</p>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>Descontos em parceiros</h3>
+                        <p>Vantagens exclusivas em estabelecimentos parceiros do clube</p>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Prioridade em eventos</h3>
+                        <p>Acesso antecipado a eventos exclusivos com jogadores e comissão técnica</p>
+                    </div>
+                    
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Carteirinha personalizada</h3>
+                        <p>Carteirinha de identificação com seu nome e número de sócio</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="planos-socios" id="planos">
+                <h2 class="section-title">Planos disponíveis</h2>
+                
+                <div class="planos-grid">
+                    <div class="plano-item">
+                        <div class="plano-header">
+                            <h3>Plano Júnior</h3>
+                            <div class="plano-preco">
+                                <span class="valor">R$ 29,90</span>
+                                <span class="periodo">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plano-beneficios">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Desconto de 20% em ingressos</li>
+                                <li><i class="fas fa-check"></i> 5% de desconto na loja</li>
+                                <li><i class="fas fa-check"></i> Carteirinha digital</li>
+                                <li><i class="fas fa-times"></i> Kit sócio torcedor</li>
+                                <li><i class="fas fa-times"></i> Descontos em parceiros</li>
+                            </ul>
+                        </div>
+                        <div class="plano-acao">
+                            <a href="#" class="btn btn-outline">Assinar agora</a>
+                        </div>
+                    </div>
+                    
+                    <div class="plano-item destaque">
+                        <div class="plano-badge">Mais popular</div>
+                        <div class="plano-header">
+                            <h3>Plano Torcedor</h3>
+                            <div class="plano-preco">
+                                <span class="valor">R$ 49,90</span>
+                                <span class="periodo">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plano-beneficios">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Desconto de 30% em ingressos</li>
+                                <li><i class="fas fa-check"></i> 10% de desconto na loja</li>
+                                <li><i class="fas fa-check"></i> Carteirinha física</li>
+                                <li><i class="fas fa-check"></i> Kit sócio torcedor</li>
+                                <li><i class="fas fa-check"></i> Descontos em parceiros</li>
+                            </ul>
+                        </div>
+                        <div class="plano-acao">
+                            <a href="#" class="btn">Assinar agora</a>
+                        </div>
+                    </div>
+                    
+                    <div class="plano-item">
+                        <div class="plano-header">
+                            <h3>Plano Família</h3>
+                            <div class="plano-preco">
+                                <span class="valor">R$ 89,90</span>
+                                <span class="periodo">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plano-beneficios">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Desconto de 40% em ingressos (4 pessoas)</li>
+                                <li><i class="fas fa-check"></i> 15% de desconto na loja</li>
+                                <li><i class="fas fa-check"></i> Carteirinhas físicas para a família</li>
+                                <li><i class="fas fa-check"></i> Kit sócio torcedor para todos</li>
+                                <li><i class="fas fa-check"></i> Descontos em parceiros</li>
+                            </ul>
+                        </div>
+                        <div class="plano-acao">
+                            <a href="#" class="btn btn-outline">Assinar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="perguntas-socios">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Como faço para me associar?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Para se associar, basta escolher o plano desejado e clicar em "Assinar agora". Você será redirecionado para uma página segura onde poderá preencher seus dados e efetuar o pagamento.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Quais são as formas de pagamento?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Aceitamos cartão de crédito (em até 12x), débito automático em conta e boleto bancário. Para pagamentos anuais, oferecemos desconto especial.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Quando recebo meu kit sócio torcedor?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>O kit sócio torcedor é enviado após a confirmação do primeiro pagamento. O prazo de entrega é de até 15 dias úteis para a Grande São Paulo e até 30 dias úteis para outras localidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Posso cancelar a qualquer momento?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, o cancelamento pode ser solicitado a qualquer momento através da área do sócio em nosso site ou entrando em contato com a central de relacionamento.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-socio">
+                <h2>Pronto para fazer parte do time?</h2>
+                <p>Junte-se a nós e viva todas as emoções do clube com benefícios exclusivos</p>
+                <a href="#planos" class="btn">Quero ser sócio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

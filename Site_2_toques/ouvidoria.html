@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvidoria - Clube de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/escudo.png" alt="Escudo do Clube" id="logo">
+                <h1><a href="index.html">2 TOQUES</a></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="midias.html">MÍDIAS</a></li>
+                    <li><a href="loja.html">LOJA</a></li>
+                    <li><a href="patrocinadores.html">PATROCINADORES</a></li>
+                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
+                    <li><a href="socio.html">SÓCIO TORCEDOR</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="loja.html#carrinho" id="carrinho-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página de Ouvidoria -->
+    <section class="pagina-conteudo">
+        <div class="container">
+            <h2 class="section-title">OUVIDORIA</h2>
+            
+            <div class="ouvidoria-content">
+                <div class="ouvidoria-info">
+                    <h3>Fale com a diretoria</h3>
+                    <p>Sua opinião é importante para nós. A Ouvidoria é o canal de comunicação entre torcedores, sócios, patrocinadores e a diretoria do clube. Aqui você pode enviar elogios, críticas, sugestões e reclamações.</p>
+                    
+                    <div class="contato-info">
+                        <div class="contato-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ouvidoria@clubedofutebol.com.br</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(21) 3456-7890</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> Bangu - Rio de janeiro/RJ</span>
+                        </div>
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Segunda a sexta, das 9h às 18h</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ouvidoria-stats">
+                        <div class="stat">
+                            <h4>92%</h4>
+                            <p>Das solicitações respondidas em até 48h</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1.5k</h4>
+                            <p>Mensagens recebidas este mês</p>
+                        </div>
+                        <div class="stat">
+                            <h4>87%</h4>
+                            <p>De satisfação com as respostas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="ouvidoria-form" id="form-ouvidoria">
+                    <h3>Envie sua mensagem</h3>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="denuncia">Denúncia</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva aqui sua mensagem..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="anexo">Anexar arquivo (opcional)</label>
+                        <input type="file" id="anexo" name="anexo">
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="consentimento" name="consentimento" required>
+                        <label for="consentimento">Concordo com o tratamento dos meus dados pessoais conforme a <a href="#">Política de Privacidade</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <div class="perguntas-frequentes">
+                <h3>Perguntas Frequentes</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Como me torno sócio torcedor?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Para se tornar um sócio torcedor, acesse a página <a href="socio.html">Sócio Torcedor</a> e escolha o plano que melhor se adequa ao seu perfil. O processo é simples e totalmente online.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Como compro ingressos para os jogos?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Os ingressos podem ser adquiridos online através do nosso site ou em pontos de venda físicos. Sócios torcedores têm direito a compra antecipada com descontos especiais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Como posso trabalhar no clube?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Todas as vagas disponíveis são publicadas em nossa página de "Trabalhe Conosco". Cadastre seu currículo e fique atento às oportunidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h4>Como faço para patrocinar o clube?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Entre em contato conosco através deste formulário selecionando o assunto "Patrocínio" ou diretamente pelo email comercial@clubedofutebol.com.br.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/escudo.png" alt="Escudo do Clube">
+                    <span>2 TOQUES</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="diretoria.html">Diretoria</a></li>
+                            <li><a href="#">Estádio</a></li>
+                            <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Torcedor</h4>
+                        <ul>
+                            <li><a href="socio.html">Seja Sócio</a></li>
+                            <li><a href="#">Ingressos</a></li>
+                            <li><a href="loja.html">Loja</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/2toquesfootballclub/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 2 TOQUES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
