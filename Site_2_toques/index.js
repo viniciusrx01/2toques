@@ -75,7 +75,7 @@ const produtos = [
         nome: "Boné Oficial",
         descricao: "Boné com logo oficial do clube",
         preco: 79.90,
-        imagem: "https://github.com/viniciusrx01/2toques/blob/main/Site_2_toques/img/loja/bone.png",
+        imagem: "https://raw.githubusercontent.com/viniciusrx01/2toques/refs/heads/main/Site_2_toques/img/loja/bone.png",
         categoria: "acessorios"
     },
     {
@@ -1085,3 +1085,4 @@ document.addEventListener('DOMContentLoaded', function() {
     atualizarCarrinho();
 
 });
+
